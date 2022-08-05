@@ -1,0 +1,31 @@
+﻿<Window
+    x:Class="WPF_to_NDI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:NDI="clr-namespace:NewTek.NDI.WPF;assembly=NDIlibDotNet2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF_to_NDI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <NDI:NdiSendContainer
+        NdiHeight="450"
+        NdiName="WPF to NDI"
+        NdiWidth="800">
+        <Grid Width="800" Height="450">
+            <Border
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                BorderBrush="Red"
+                BorderThickness="3" />
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="100"
+                Foreground="Blue"
+                Text="HELLO WORLD" />
+        </Grid>
+    </NDI:NdiSendContainer>
+</Window>
